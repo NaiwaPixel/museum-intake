@@ -1,0 +1,7 @@
+[
+  { "name": "待审", "color": "fbca04", "description": "刚提交，等编辑看" },
+  { "name": "待补充", "color": "d93f0b", "description": "编辑留了修改意见，等投稿人补充" },
+  { "name": "已采纳", "color": "0e8a16", "description": "署名、授权、文件都核对过，正在做入藏 PR" },
+  { "name": "已入藏", "color": "5319e7", "description": "已经出现在公开网站上，可以关闭" },
+  { "name": "内容建议", "color": "14855c", "description": "来访者推荐的公开作品或选题" }
+]

@@ -1,0 +1,21 @@
+name: 推荐内容
+description: 推荐一个已公开的作品，或提出希望博物馆收录的题材。
+title: "[推荐] "
+labels: ["待审", "内容建议"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎组织外的访客推荐内容。这条建议会公开。推荐他人的作品，请贴作者公开的原帖或主页；编辑采纳后会再向作者确认展示范围。
+  - type: textarea
+    id: idea
+    attributes:
+      label: 想推荐什么
+      placeholder: 写下作品名或选题，以及你觉得它有意思的地方。
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 原作或作者公开链接（如有）
+      placeholder: "https://…"

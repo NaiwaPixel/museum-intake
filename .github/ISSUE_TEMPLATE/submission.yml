@@ -1,0 +1,76 @@
+name: 提交作品
+description: 把你创作或参与创作的作品投给像素奶蛙数字博物馆。
+title: "[投稿] "
+labels: ["待审"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        在上方标题栏写作品名。提交后，任何人都能看到这份 Issue 的文字和附件。请使用可公开的署名、预览和链接。
+  - type: input
+    id: credits
+    attributes:
+      label: 公开署名与分工
+      placeholder: "例如：小葵（像素画），阿树（配乐）"
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: 作品形式
+      options:
+        - 像素插画或漫画
+        - 游戏
+        - 表情或动画
+        - 动态壁纸
+        - 视频或声音作品
+        - 素材或制作工具
+        - 其他形式
+    validations:
+      required: true
+  - type: textarea
+    id: preview
+    attributes:
+      label: 作品预览或公开链接
+      description: 可直接拖入预览图，也可以贴作品原帖、试玩、视频或试听地址。
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 作品介绍
+      description: 一两句话就好。你做了什么，希望来看的人注意哪一点？
+    validations:
+      required: true
+  - type: dropdown
+    id: display
+    attributes:
+      label: 官网展示意愿
+      description: 这里选择的是博物馆官网的展示范围。这份投稿本身会公开。
+      options:
+        - 同意官网按上述署名展示所提交的预览
+        - 入藏前请在这条 Issue 里跟我确认展示范围
+    validations:
+      required: true
+  - type: dropdown
+    id: download
+    attributes:
+      label: 官网是否可以提供原文件下载
+      options:
+        - 仅展示预览
+        - 可以，按下方使用条件提供下载
+        - 入藏前请再跟我确认
+    validations:
+      required: true
+  - type: textarea
+    id: terms
+    attributes:
+      label: 素材来源、署名和使用条件（选填）
+      description: 有合作作者、引用的素材、特定许可或转载条件，可以在这里说明。
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: 公开投稿
+      options:
+        - label: 我有权公开提交以上文字和预览，合作者同意公开所填写的署名。
+          required: true
